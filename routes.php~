@@ -1,0 +1,29 @@
+<?php
+//session_start();
+
+
+$app->get('/', function(){
+         echo "This is the base route but my other routes don't work.";
+});
+
+$app->get('/test', function() use($app){
+echo "Test Route";
+
+});
+
+//The following handles any request to the /hello route
+
+$app->get('/upload', function() use ($app){
+echo "upload test";
+});
+
+
+//The following handles any dynamic requests to the /hello/NAME routes (like /hello/world)
+
+
+
+ //The following handles the POST requests sent to the /greet route
+
+
+
+?>
