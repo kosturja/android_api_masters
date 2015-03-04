@@ -38,10 +38,12 @@ echo "upload test";
 });
 
 $app->get('/specials', function() use($app){
+	echo "Specials";
 	// This route is for obtaining the daily specials
 
 });
 $app->get('/menu',function() use($app){
+	echo "Menu";
 	// This route is for getting the menu pertaining to a restaurant
 
 });
