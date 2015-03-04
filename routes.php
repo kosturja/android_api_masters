@@ -47,9 +47,9 @@ $app->get('/menu',function() use($app){
 });
 
 $app->get('/location/lat/long',function($lat,$long) use($app){
-	echo $lat
-	echo '<br>'
-	echo $long
+	echo $lat;
+	echo '<br>';
+	echo $long;
 
 	
 });
