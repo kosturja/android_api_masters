@@ -49,6 +49,7 @@ $app->get('/menu',function() use($app){
 $app->get('location',function() use($app){
 	// Gets the location based on input from the phone.
 	// More changes checking git commits
+	// Will these changes track
 	
 });
 
