@@ -22,7 +22,7 @@ $app->get('/', function(){
 		}
 	}
 	else{
-		echo "fail";
+		// echo "fail";
 		echo  mysqli_sqlstate($link);
 	}
 });
@@ -37,6 +37,20 @@ $app->get('/upload', function() use ($app){
 echo "upload test";
 });
 
+$app->get('/specials', function() use($app){
+	// This route is for obtaining the daily specials
+
+});
+$app->get('/menu',function() use($app){
+	// This route is for getting the menu pertaining to a restaurant
+
+});
+
+$app->get('location',function() use($app){
+	// Gets the location based on input from the phone.
+	// More changes checking git commits
+	
+});
 
 //The following handles any dynamic requests to the /hello/NAME routes (like /hello/world)
 
